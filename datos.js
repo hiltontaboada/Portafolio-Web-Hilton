@@ -34,7 +34,7 @@ const PROYECTOS = {
     descripcion: "Hostal boutique ubicado en Iquique Chile. El proyecto abarcó el rediseño completo de su marca e identidad visual, con aplicación en redes sociales, material de bienvenida y presencia digital.",
     desafio:     "El hostal tenía una imagen desactualizada que no reflejaba la calidad de sus instalaciones. Necesitaban una identidad premium y elegante.",
     solucion:    "Se diseñó una identidad visual sofisticada con inspiración en la arquitectura colonial de Sucre, usando una paleta neutra y tipografía serif.",
-    imagen_hero: "assets/proyectos/martel/Portada Facebook.png",
+    imagen_hero: "assets/proyectos/martel/Portada Martel.png",
     galeria: [
       { src: "assets/proyectos/Martel/Martel Logo Perfil.png",       titulo: "Logotipo",              desc: "Identidad visual principal" },
       { src: "assets/proyectos/Martel/Martel - Paleta.png",  titulo: "Papelería corporativa", desc: "Tarjetas, sobres y membrete" },
