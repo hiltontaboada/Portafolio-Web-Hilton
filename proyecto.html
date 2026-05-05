@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto — Hilton Taboada Jr.</title>
+  <link rel="stylesheet" href="portfolio_css.css" />
+  <link rel="stylesheet" href="proyecto_css.css" />
+  <link rel="icon" type="image/png" href="assets/logohilton.svg">
+</head>
+<body class="proyecto-page">
+
+  <div id="cur"></div>
+  <div id="cur2"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" aria-label="Volver al inicio">
+      <img class="logo-svg" src="assets/logohilton.svg" alt="">
+    </a>
+    <a href="index.html#portfolio" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Volver al portafolio
+    </a>
+    <a href="https://wa.me/59175778614?text=Hola%20Hilton%2C%20vi%20tu%20portafolio%20y%20quiero%20trabajar%20contigo." target="_blank" class="nav-cta">
+      <span class="wa-pulse"></span> Disponible
+    </a>
+  </nav>
+
+  <!-- ─── HERO DEL PROYECTO ─── -->
+  <section class="proy-hero">
+    <div class="proy-hero-img-wrap">
+      <!--
+        imagen_hero del proyecto — se inyecta via JS
+        Si no hay imagen, muestra fondo oscuro con nombre del proyecto
+      -->
+      <img id="proy-hero-img" src="" alt="" class="proy-hero-img" />
+      <div class="proy-hero-overlay"></div>
+    </div>
+    <div class="proy-hero-content reveal">
+      <span id="proy-categoria" class="proy-cat-badge"></span>
+      <h1 id="proy-titulo" class="proy-titulo"></h1>
+      <div class="proy-meta">
+        <div class="proy-meta-item">
+          <span class="meta-l">Cliente</span>
+          <span id="proy-cliente" class="meta-v"></span>
+        </div>
+        <div class="proy-meta-sep"></div>
+        <div class="proy-meta-item">
+          <span class="meta-l">Año</span>
+          <span id="proy-año" class="meta-v"></span>
+        </div>
+        <div class="proy-meta-sep"></div>
+        <div class="proy-meta-item">
+          <span class="meta-l">Servicios</span>
+          <span id="proy-servicios" class="meta-v"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DESCRIPCIÓN ─── -->
+  <section class="proy-section proy-desc-section">
+    <div class="proy-container">
+      <div class="proy-desc-grid reveal">
+        <div class="proy-desc-left">
+          <span class="proy-sec-label">Descripción</span>
+          <p id="proy-descripcion" class="proy-text-lg"></p>
+        </div>
+        <div class="proy-desc-right">
+          <div class="proy-block">
+            <span class="proy-sec-label">El desafío</span>
+            <p id="proy-desafio" class="proy-text"></p>
+          </div>
+          <div class="proy-block">
+            <span class="proy-sec-label">La solución</span>
+            <p id="proy-solucion" class="proy-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALERÍA DE TRABAJOS ─── -->
+  <section class="proy-section">
+    <div class="proy-container">
+      <div class="proy-galeria-header reveal">
+        <span class="proy-sec-label">Galería de trabajos</span>
+        <h2 class="proy-sec-title">Piezas del proyecto</h2>
+        <div class="sec-rule"></div>
+      </div>
+      <!--
+        ╔══════════════════════════════════════════════════════════╗
+        ║  GALERÍA — se genera dinámicamente desde PROYECTOS[]     ║
+        ║  Cada item tiene:                                        ║
+        ║    • Imagen (600×600px o 1200×800px recomendado)         ║
+        ║    • Título y descripción de la pieza                    ║
+        ║  Para imágenes apaisadas añade la clase: .item-wide      ║
+        ║  Para imagen de ancho completo: .item-full               ║
+        ╚══════════════════════════════════════════════════════════╝
+      -->
+      <div id="proy-galeria" class="proy-galeria reveal"></div>
+    </div>
+  </section>
+
+  <!-- ─── LIGHTBOX (modal de imagen ampliada) ─── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <button class="lb-close" id="lb-close" aria-label="Cerrar">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 3l14 14M17 3L3 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="lb-prev" id="lb-prev" aria-label="Anterior">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M13 4L7 10l6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="lb-next" id="lb-next" aria-label="Siguiente">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M7 4l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="" class="lb-img" />
+      <div class="lb-caption">
+        <span id="lb-titulo" class="lb-cap-titulo"></span>
+        <span id="lb-desc"   class="lb-cap-desc"></span>
+      </div>
+    </div>
+    <div class="lb-counter"><span id="lb-cur">1</span> / <span id="lb-total">1</span></div>
+  </div>
+  <div id="lb-overlay" class="lb-overlay"></div>
+
+  <!-- ─── SIGUIENTE PROYECTO ─── -->
+  <section class="proy-next-section">
+    <div class="proy-container">
+      <div class="proy-next-inner reveal">
+        <span class="proy-sec-label">Siguiente proyecto</span>
+        <a id="proy-next-link" href="#" class="proy-next-card">
+          <div class="pnc-left">
+            <span id="proy-next-cat"   class="pnc-cat"></span>
+            <span id="proy-next-titulo" class="pnc-titulo"></span>
+          </div>
+          <div class="pnc-arrow">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 16h20M18 8l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+        <a href="index.html#portfolio" class="proy-back-all">← Ver todos los proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA CONTACTO ─── -->
+  <section class="proy-cta-section">
+    <div class="proy-container">
+      <div class="proy-cta-inner reveal">
+        <h2 class="proy-cta-title">¿Te gustó este trabajo?<br><em>Trabajemos juntos.</em></h2>
+        <div class="hero-ctas">
+          <a href="https://wa.me/59175778614?text=Hola%20Hilton%2C%20vi%20tu%20portafolio%20y%20quiero%20trabajar%20contigo." target="_blank" class="btn-primary btn-lg">
+            <span class="wa-pulse"></span> WhatsApp directo
+          </a>
+          <a href="mailto:hilton.tabs@gmail.com" class="btn-ghost btn-lg">
+            hilton.tabs@gmail.com ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-logo">
+      <img class="logo-svg" src="assets/logohilton.svg" alt="">
+      <span>Hilton Taboada Jr. © 2025</span>
+    </div>
+    <span class="footer-right">Sucre, Bolivia · Diseño & Marketing Digital</span>
+  </footer>
+
+  <script src="datos.js"></script>
+  <script src="main.js"></script>
+  <script src="proyecto.js"></script>
+</body>
+</html>

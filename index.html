@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilton Taboada Jr. — Diseñador & Marketing Digital</title>
+  <link rel="stylesheet" href="portfolio_css.css" />
+  <!-- Reemplaza con tu favicon: -->
+  <link rel="icon" type="image/png" href="assets/logohilton.svg">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ CURSOR ═══════════════════════════ -->
+  <div id="cur"></div>
+  <div id="cur2"></div>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="Inicio">
+      <img class="logo-svg" src="assets/logohilton.svg" alt="">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#portfolio">Portafolio</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#education">Formación</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/59175778614?text=Hola%20Hilton%2C%20vi%20tu%20portafolio%20y%20quiero%20trabajar%20contigo." target="_blank" class="nav-cta">
+      <span class="wa-pulse"></span> Disponible
+    </a>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="hero">
+    <div class="hero-left">
+      <span class="eyebrow">Diseñador Gráfico · Marketing Digital · Docente</span>
+      <h1 class="hero-name">
+        Hilton<br>
+        <em>Taboada</em><br>
+        <span class="hero-jr">Jr.</span>
+      </h1>
+      <p class="hero-sub">Sucre, Bolivia · +7 años de experiencia · +25 clientes</p>
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn-primary">
+          <span>Ver mi trabajo</span>
+          <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </a>
+        <a href="https://wa.me/59175778614?text=Hola%20Hilton%2C%20vi%20tu%20portafolio%20y%20quiero%20trabajar%20contigo." target="_blank" class="btn-wa">
+          <span class="wa-pulse"></span>
+          <span>WhatsApp</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2h10v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="mailto:hilton.tabs@gmail.com" class="btn-ghost">
+          <span>Email</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2h10v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img
+          src="assets/hiltonia.png"
+          alt="Hilton Taboada Jr."
+          class="hero-photo"
+          onerror="this.parentElement.classList.add('photo-placeholder')"
+        />
+        <div class="photo-overlay-text">HILTON<br>TABOADA</div>
+      </div>
+      <!-- Logo grande decorativo fondo -->
+      <div class="hero-logo-bg" aria-hidden="true">
+        <svg viewBox="0 0 60 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,18 10,0 22,0 8,24" fill="white"/>
+          <polygon points="2,30 16,54 6,72 0,72 0,42" fill="white"/>
+          <polygon points="14,28 38,8 44,16 20,36" fill="white"/>
+          <polygon points="36,0 48,0 60,36 48,36" fill="white"/>
+          <polygon points="50,42 60,42 60,72 44,72 38,54" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+  <section id="about" class="section">
+    <div class="sec-header reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">Sobre mí</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="about-grid">
+      <!-- FOTO ABOUT -->
+      <div class="about-photo-wrap reveal">
+        <img
+          src="assets/hilton uyuni camara.jpg"
+          alt="Hilton Taboada Jr."
+          class="about-photo"
+          onerror="this.parentElement.classList.add('photo-placeholder')"
+        />
+        <div class="about-photo-frame"></div>
+        <div class="about-photo-badge">
+          <span class="badge-num">+7</span>
+          <span class="badge-txt">años de<br>experiencia</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p>Soy una persona que le gusta la digitalización, desde la planificación, procesos y operativización. Con la expectativa de que el trabajo sea más eficiente y de mayor impacto.</p>
+        <p>Tecnólogo en Diseño Multimedia y Licenciado en Administración de Empresas. Con más de 7 años como Freelancer, he colaborado con más de 25 empresas a nivel local, nacional e internacional.</p>
+        <p>Docente de diseño gráfico, multimedia y marketing digital. Apasionado por el SEO, el eCommerce y las estrategias que generan resultados reales.</p>
+
+        <div class="stats-grid">
+          <div class="stat"><span class="stat-n">+25</span><span class="stat-l">Clientes</span></div>
+          <div class="stat"><span class="stat-n">7+</span><span class="stat-l">Años</span></div>
+          <div class="stat"><span class="stat-n">6</span><span class="stat-l">Posgrados</span></div>
+          <div class="stat"><span class="stat-n">4</span><span class="stat-l">Países</span></div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Diseño Gráfico</span>
+          <span class="tag">Marketing Digital</span>
+          <span class="tag">Community Manager</span>
+          <span class="tag">Social Media</span>
+          <span class="tag">Diseño Web</span>
+          <span class="tag">Docencia</span>
+          <span class="tag">SEO</span>
+          <span class="tag">eCommerce</span>
+          <span class="tag">Audiovisual</span>
+          <span class="tag">Live Streaming</span>
+          <span class="tag">IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PORTFOLIO ═══════════════════════════ -->
+  <section id="portfolio" class="section">
+    <div class="sec-header reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Portafolio</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="port-filters reveal">
+      <button class="pf active" data-filter="all">Todos</button>
+      <button class="pf" data-filter="branding">Branding</button>
+      <button class="pf" data-filter="social">Social Media</button>
+      <button class="pf" data-filter="Diseño">Diseño</button>
+      <button class="pf" data-filter="multimedia">Multimedia</button>
+      <button class="pf" data-filter="fotografia">Fotografía</button>
+    </div>
+
+    <!--
+      ╔══════════════════════════════════════════════════════════╗
+      ║  GALERÍA DE PROYECTOS                                    ║
+      ║  Cada .port-card tiene:                                  ║
+      ║    data-cat="branding|social|web|multimedia"             ║
+      ║    <img src="assets/proyectos/nombre.jpg">               ║
+      ║  Tamaño de imagen recomendado: 600×600px (1:1)           ║
+      ╚══════════════════════════════════════════════════════════╝
+    -->
+    <div class="port-grid reveal" id="port-grid">
+
+      <div class="port-card" data-cat="branding" data-id="martel-king">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/Martel/Martel Logo I.png" alt="Martel King Hostal" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Martel King — Branding" />
+          <div class="port-hover">
+            <span class="ph-cat">Branding</span>
+            <span class="ph-title">Martel King Hostal</span>
+            <span class="ph-desc">Branding completo para hostal boutique</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Branding</span>
+          <span class="pi-title">Martel King Hostal</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="branding" data-id="talk-english">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/Talk - English/Perfil Talk.png" alt="Talk English" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Talk English — Branding" />
+          <div class="port-hover">
+            <span class="ph-cat">Branding</span>
+            <span class="ph-title">Talk English</span>
+            <span class="ph-desc">Identidad visual para academia de inglés</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Branding</span>
+          <span class="pi-title">Talk English</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="branding" data-id="tazzio">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/Tazzio/tazzio logo.png" alt="tazzio" onerror="this.parentElement.classList.add('img-placeholder')" data-label="tazzio — Branding" />
+          <div class="port-hover">
+            <span class="ph-cat">Branding</span>
+            <span class="ph-title">Tazzio</span>
+            <span class="ph-desc">Campaña de posts y contenido digital</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Social Media</span>
+          <span class="pi-title">Tazzio</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="branding" data-id="elevate">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/Elevate/Perfil Elevate.png" alt="Elevate Dream's Agency" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Elevate — Branding" />
+          <div class="port-hover">
+            <span class="ph-cat">Branding</span>
+            <span class="ph-title">Elevate Dream's Agency</span>
+            <span class="ph-desc">Arte publicitario para agencia creativa</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Branding</span>
+          <span class="pi-title">Elevate Dream's Agency</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="social" data-id="antena-2000">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/radio/radio antena.png" alt="Radio Antena 2000" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Radio Antena 2000 — Social" />
+          <div class="port-hover">
+            <span class="ph-cat">Social Media</span>
+            <span class="ph-title">Radio Antena 2000</span>
+            <span class="ph-desc">Gestión y diseño de contenido radial</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Social Media</span>
+          <span class="pi-title">Radio Antena 2000</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="social" data-id="wilber">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/Wilber/wilberlogo.jpg" alt="Wilber & Hnos." onerror="this.parentElement.classList.add('img-placeholder')" data-label="Wilber & Hnos. — Social" />
+          <div class="port-hover">
+            <span class="ph-cat">Social Media</span>
+            <span class="ph-title">Wilber & Hnos. S.R.L.</span>
+            <span class="ph-desc">Diseño para empresa de transporte</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Social Media</span>
+          <span class="pi-title">Wilber & Hnos. S.R.L.</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="social" data-id="tecba">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/tecba/logo tecba.png" alt="TECBA" onerror="this.parentElement.classList.add('img-placeholder')" data-label="TECBA — Social" />
+          <div class="port-hover">
+            <span class="ph-cat">Social Media</span>
+            <span class="ph-title">TECBA</span>
+            <span class="ph-desc">Marketing Digital Integral</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Social Media</span>
+          <span class="pi-title">TECBA</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="Diseño" data-id="expoempleo">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/expoempleo/logo.png" alt="Diseño" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Diseño Publicitario" />
+          <div class="port-hover">
+            <span class="ph-cat">Diseño Publicitario</span>
+            <span class="ph-title">ExpoEmpleo Bolivia</span>
+            <span class="ph-desc">Creatividad y presencia digital</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Diseño</span>
+          <span class="pi-title">Diseño Institucional</span>
+        </div>
+      </div>
+
+      <div class="port-card" data-cat="Diseño" data-id="adm">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/adm/logo.jpg" alt="Diseño" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Diseño Publicitario" />
+          <div class="port-hover">
+            <span class="ph-cat">Diseño Intitucional</span>
+            <span class="ph-title">Administración de Empresas USFX</span>
+            <span class="ph-desc">Creatividad y presencia digital</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Diseño</span>
+          <span class="pi-title">Diseño Institucional</span>
+        </div>
+      </div>
+
+      <!-- ══ AGREGAR MÁS PROYECTOS AQUÍ ══
+      <div class="port-card" data-cat="branding">
+        <div class="port-img-wrap">
+          <img src="assets/proyectos/tu-proyecto.jpg" alt="Nombre proyecto" onerror="this.parentElement.classList.add('img-placeholder')" data-label="Nombre — Categoría" />
+          <div class="port-hover">
+            <span class="ph-cat">Categoría</span>
+            <span class="ph-title">Nombre del proyecto</span>
+            <span class="ph-desc">Descripción breve</span>
+          </div>
+        </div>
+        <div class="port-info">
+          <span class="pi-cat">Categoría</span>
+          <span class="pi-title">Nombre del proyecto</span>
+        </div>
+      </div>
+      ══ FIN PROYECTOS ══ -->
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="sec-header reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Experiencia</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="exp-list reveal">
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2025</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Marketing Digital & Director de Proyectos</h3>
+          <p class="exp-org">Tecnológico Boliviano Alemán</p>
+          <p class="exp-desc">Coordinación de campañas de marketing, comunicación interna, social media y presentación de proyectos educativos.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2022–2024</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Community Manager & Diseñador Multimedia</h3>
+          <p class="exp-org">Tecnológico Boliviano Alemán</p>
+          <p class="exp-desc">Diseño, social media, manejo de plataformas educativas y proyectos institucionales.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2017–Hoy</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Diseñador Freelance & Consultor Social Media</h3>
+          <p class="exp-org">Independiente · Bolivia / Chile / Argentina / EE.UU.</p>
+          <p class="exp-desc">+25 empresas atendidas. Branding, campañas digitales, consultoría de marketing y diseño editorial.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2020–2021</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Diseñador Gráfico & Community Manager</h3>
+          <p class="exp-org">INNTRADIGITAL Agency</p>
+          <p class="exp-desc">Arte publicitario y campañas completas para múltiples unidades de negocio.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2018–2020</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Community Manager & Diseñador</h3>
+          <p class="exp-org">Instituto South American System · USFX</p>
+          <p class="exp-desc">Estrategias de redes sociales, diseño digital y curación de contenido.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-period">2017–2019</span>
+        </div>
+        <div class="exp-right">
+          <h3 class="exp-role">Productor & Conductor</h3>
+          <p class="exp-org">Radio Antena 2000 — "Capisound"</p>
+          <p class="exp-desc">Producción radial, conducción y organización de eventos para el público juvenil.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOCENCIA -->
+    <div class="docencia-wrap reveal">
+      <h3 class="docencia-title">Experiencia Docente · Tecnológico Boliviano Alemán</h3>
+      <div class="docencia-grid">
+        <div class="doc-item"><span>Programación Multimedia I (HTML, CSS)</span><span class="doc-year">2022–2023</span></div>
+        <div class="doc-item"><span>Diseño Publicitario (Ps, Ai)</span><span class="doc-year">2024</span></div>
+        <div class="doc-item"><span>Computación Gráfica</span><span class="doc-year">2024</span></div>
+        <div class="doc-item"><span>Informática Empresarial</span><span class="doc-year">2024–2025</span></div>
+        <div class="doc-item"><span>Mercadotecnia en Internet / eCommerce</span><span class="doc-year">2025</span></div>
+        <div class="doc-item"><span>Creación de Contenido con Canva</span><span class="doc-year">2023–2025</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+  <section id="education" class="section">
+    <div class="sec-header reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Formación</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card level-pos">
+        <span class="edu-level">Posgrado</span>
+        <span class="edu-year">2026 · En proceso</span>
+        <h4 class="edu-deg">Maestría: Marketing Digital eBusiness</h4>
+        <p class="edu-inst">UCB "San Pablo"</p>
+      </div>
+      <div class="edu-card level-pos">
+        <span class="edu-level">Posgrado</span>
+        <span class="edu-year">2025</span>
+        <h4 class="edu-deg">Diplomado: Marketing Digital para eCommerce</h4>
+        <p class="edu-inst">UCB "San Pablo"</p>
+      </div>
+      <div class="edu-card level-pos">
+        <span class="edu-level">Posgrado</span>
+        <span class="edu-year">2025</span>
+        <h4 class="edu-deg">Diplomado: Community Manager</h4>
+        <p class="edu-inst">UCB "San Pablo"</p>
+      </div>
+      <div class="edu-card level-pos">
+        <span class="edu-level">Posgrado</span>
+        <span class="edu-year">2024</span>
+        <h4 class="edu-deg">Diplomado en Educación Superior</h4>
+        <p class="edu-inst">USFX · Chuquisaca</p>
+      </div>
+      <div class="edu-card level-pos">
+        <span class="edu-level">Posgrado</span>
+        <span class="edu-year">2022</span>
+        <h4 class="edu-deg">Diplomado: Marketing Digital & Social Media</h4>
+        <p class="edu-inst">UCB "San Pablo"</p>
+      </div>
+      <div class="edu-card level-pre">
+        <span class="edu-level">Pregrado</span>
+        <span class="edu-year">Tecnológico Boliviano Alemán</span>
+        <h4 class="edu-deg">Tecnólogo en Diseño Multimedia Web Master</h4>
+        <p class="edu-inst">Carrera Diseño Multimedia Web Master</p>
+      </div>
+      <div class="edu-card level-pre">
+        <span class="edu-level">Pregrado</span>
+        <span class="edu-year">USFX · Chuquisaca</span>
+        <h4 class="edu-deg">Lic. en Administración de Empresas</h4>
+        <p class="edu-inst">Carrera Administración de Empresas</p>
+      </div>
+      <div class="edu-card level-col">
+        <span class="edu-level">Colegio</span>
+        <span class="edu-year">2015</span>
+        <h4 class="edu-deg">Bachiller en Humanidades</h4>
+        <p class="edu-inst">Colegio Seminario San Cristóbal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="sec-header reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Software & Skills</h2>
+      <div class="sec-rule"></div>
+    </div>
+
+    <div class="sk-grid reveal">
+      <div class="sk-cat">
+        <h4 class="sk-title">Diseño Visual</h4>
+        <div class="sk-row"><span>Photoshop</span><div class="sk-dots" data-val="5"></div></div>
+        <div class="sk-row"><span>Illustrator</span><div class="sk-dots" data-val="5"></div></div>
+        <div class="sk-row"><span>Lightroom</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>Figma</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>Canva</span><div class="sk-dots" data-val="5"></div></div>
+      </div>
+      <div class="sk-cat">
+        <h4 class="sk-title">Multimedia</h4>
+        <div class="sk-row"><span>CapCut</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>OBS Studio</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>Audacity</span><div class="sk-dots" data-val="3"></div></div>
+        <div class="sk-row"><span>Uso consola audio</span><div class="sk-dots" data-val="3"></div></div>
+      </div>
+      <div class="sk-cat">
+        <h4 class="sk-title">Web & Código</h4>
+        <div class="sk-row"><span>HTML</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>CSS</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>PHP</span><div class="sk-dots" data-val="3"></div></div>
+        <div class="sk-row"><span>WordPress</span><div class="sk-dots" data-val="4"></div></div>
+      </div>
+      <div class="sk-cat">
+        <h4 class="sk-title">Marketing & Gestión</h4>
+        <div class="sk-row"><span>Social Media</span><div class="sk-dots" data-val="5"></div></div>
+        <div class="sk-row"><span>Google Workspace</span><div class="sk-dots" data-val="5"></div></div>
+        <div class="sk-row"><span>Notion</span><div class="sk-dots" data-val="4"></div></div>
+        <div class="sk-row"><span>ChatGPT / Gemini / Claude</span><div class="sk-dots" data-val="4"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-inner reveal">
+      <div class="contact-logo-bg" aria-hidden="true">
+        <img class="logo-svg" src="assets/logohilton.svg" alt="Logo de Hilton Taboada Jr.">
+      </div>
+      <span class="sec-num">06</span>
+      <h2 class="contact-big">¿Tienes un<br>proyecto?<br><em>Hablemos.</em></h2>
+      <div class="contact-ctas">
+        <a href="https://wa.me/59175778614?text=Hola%20Hilton%2C%20vi%20tu%20portafolio%20y%20quiero%20trabajar%20contigo." target="_blank" class="btn-primary btn-lg">
+          <span class="wa-pulse"></span>
+          <span>Escribir por WhatsApp</span>
+          <svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 3h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="mailto:hilton.tabs@gmail.com" class="btn-ghost btn-lg">
+          hilton.tabs@gmail.com ↗
+        </a>
+      </div>
+      <div class="contact-info-row">
+        <div class="ci"><span class="ci-l">Teléfono</span><span class="ci-v">+591 75778614</span></div>
+        <div class="ci"><span class="ci-l">Ubicación</span><span class="ci-v">Sucre, Bolivia</span></div>
+        <div class="ci"><span class="ci-l"><a href="https://www.linkedin.com/in/hiltontaboada" target="_blank">LinkedIn</a></span><span class="ci-v"><a href="https://www.linkedin.com/in/hiltontaboada" target="_blank">Hilton Taboada Jr</a></span></div>
+        <div class="ci"><span class="ci-l"><a href="https://www.instagram.com/hiltontaboada_jr" target="_blank">Instagram</a></span><span class="ci-v"><a href="https://www.instagram.com/hiltontaboada_jr" target="_blank">@hiltontaboada_jr</a></span></div>
+        <div class="ci"><span class="ci-l"><a href="https://twitter.com/HiltonTaboada" target="_blank">X / Twitter</a></span><span class="ci-v"><a href="https://twitter.com/HiltonTaboada" target="_blank">@Hilton taboada jr.</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer>
+    <div class="footer-logo">
+      <img class="logo-svg" src="assets/logohilton.svg" alt="Logo de Hilton Taboada Jr.">
+      <span>Hilton Taboada Jr. © 2025</span>
+    </div>
+    <span class="footer-right">Sucre, Bolivia · Diseño & Marketing Digital</span>
+  </footer>
+  <script src="datos.js"></script>
+  <script src="main.js"></script>
+  <script src="proyecto.js"></script>
+
+</body>
+</html>
